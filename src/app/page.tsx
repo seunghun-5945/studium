@@ -1,12 +1,16 @@
+import Link from "next/link";
+
 const Home = () => {
   return (
     <div className="w-full h-full">
       <nav className="flex flex-row items-center justify-between w-full p-6 bg-white">
         <div className="flex items-center justify-center flex-col">
-          <text className="font-semibold text-3xl">studium</text>
-          <text className="font-semibold text-xl">학습사이트</text>
+          <span className="font-semibold text-3xl">studium</span>
+          <span className="font-semibold text-xl">학습사이트</span>
         </div>
-        <text className="font-semibold text-xl">signin</text>
+        <Link href="/signin" className="font-semibold text-xl">
+          signin
+        </Link>
       </nav>
       <nav className="flex items-center justify-around category w-full p-4 bg-blue-300">
         <ul>프론트엔드</ul>
